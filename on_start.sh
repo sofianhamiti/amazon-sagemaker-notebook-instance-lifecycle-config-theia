@@ -16,19 +16,19 @@ nvm use 12
 npm install -g yarn
 
 NODE_OPTIONS=--max_old_space_size=4096
-curl https://raw.githubusercontent.com/SofianHamiti/theia-sagemaker/main/package.json -o ${EC2_HOME}/theia/package.json
+curl https://raw.githubusercontent.com/SofianHamiti/amazon-sagemaker-notebook-instance-lifecycle-config-theia/main/config/package.json -o ${EC2_HOME}/theia/package.json
 nohup yarn &
 
 #####################################
-### Configure Theia
+### CONFIGURE THEIA IDE
 #####################################
 THEIA_PATH=$PATH
 mkdir ${EC2_HOME}/.theia
-curl https://raw.githubusercontent.com/SofianHamiti/theia-sagemaker/main/launch.json -o ${EC2_HOME}/.theia/launch.json
-curl https://raw.githubusercontent.com/SofianHamiti/theia-sagemaker/main/settings.json -o ${EC2_HOME}/.theia/settings.json
+curl https://raw.githubusercontent.com/SofianHamiti/amazon-sagemaker-notebook-instance-lifecycle-config-theia/main/config/launch.json -o ${EC2_HOME}/.theia/launch.json
+curl https://raw.githubusercontent.com/SofianHamiti/amazon-sagemaker-notebook-instance-lifecycle-config-theia/main/config/settings.json -o ${EC2_HOME}/.theia/settings.json
 
 #####################################
-### Integrate Theia IDE with Jupyter
+### INTEGRATE THEIA IDE WITH JUPYTER
 #####################################
 ## CONFIGURE JUPYTER PROXY TO MAP TO THE THEIA IDE
 JUPYTER_ENV=/home/ec2-user/anaconda3/envs/JupyterSystemEnv
