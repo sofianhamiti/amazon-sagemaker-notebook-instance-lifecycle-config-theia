@@ -1,5 +1,6 @@
 {
   "workbench.iconTheme": "theia-file-icons",
+  "python.condaPath": "/home/ec2-user/anaconda3/condabin/conda",
   "files.exclude": {
     ".*": true
   }
