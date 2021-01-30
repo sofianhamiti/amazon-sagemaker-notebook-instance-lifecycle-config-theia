@@ -5,7 +5,7 @@ sudo -u ec2-user -i <<'EOP'
 ## INSTALL THEIA IDE FROM SOURCE
 #####################################
 EC2_HOME=/home/ec2-user
-mkdir ${EC2_HOME}/.theia && cd ${EC2_HOME}/.theia
+mkdir ${EC2_HOME}/theia && cd ${EC2_HOME}/theia
 
 # Install nvm with node and npm.
 curl https://raw.githubusercontent.com/creationix/nvm/v0.37.2/install.sh | bash
@@ -16,7 +16,7 @@ nvm use 12
 npm install -g yarn
 
 NODE_OPTIONS=--max_old_space_size=4096
-curl https://raw.githubusercontent.com/SofianHamiti/amazon-sagemaker-notebook-instance-lifecycle-config-theia/main/config/package.json -o ${EC2_HOME}/.theia/package.json
+curl https://raw.githubusercontent.com/SofianHamiti/amazon-sagemaker-notebook-instance-lifecycle-config-theia/main/config/package.json -o ${EC2_HOME}/theia/package.json
 nohup yarn &
 
 #####################################
