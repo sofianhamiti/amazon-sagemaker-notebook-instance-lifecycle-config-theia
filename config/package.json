@@ -80,6 +80,7 @@
     "vscode-builtin-theme-red": "https://open-vsx.org/api/vscode/theme-red/1.44.2/file/vscode.theme-red-1.44.2.vsix",
     "vscode-builtin-theme-solarized-dark": "https://open-vsx.org/api/vscode/theme-solarized-dark/1.44.2/file/vscode.theme-solarized-dark-1.44.2.vsix",
     "vscode-builtin-theme-tomorrow-night-blue": "https://open-vsx.org/api/vscode/theme-tomorrow-night-blue/1.44.2/file/vscode.theme-tomorrow-night-blue-1.44.2.vsix",
-    "vscode-builtin-icon-theme-seti": "https://open-vsx.org/api/vscode/vscode-theme-seti/1.44.2/file/vscode.vscode-theme-seti-1.44.2.vsix"
+    "vscode-builtin-icon-theme-seti": "https://open-vsx.org/api/vscode/vscode-theme-seti/1.44.2/file/vscode.vscode-theme-seti-1.44.2.vsix",
+    "vscode-python": "https://github.com/microsoft/vscode-python/releases/download/2020.5.86806/ms-python-release.vsix"
   }
 }
