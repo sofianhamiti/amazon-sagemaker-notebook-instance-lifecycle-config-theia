@@ -1,6 +1,7 @@
 {
   "workbench.iconTheme": "theia-file-icons",
   "terminal.integrated.inheritEnv": true,
+  "python.condaPath": "/home/ec2-user/anaconda3/condabin/conda",
   "python.linting.pylintEnabled": true,
   "python.linting.flake8Enabled": true,
   "python.linting.pycodestyleEnabled": true,
