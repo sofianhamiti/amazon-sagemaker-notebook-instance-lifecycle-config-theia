@@ -30,7 +30,6 @@
     "@theia/callhierarchy": "1.11.0",
     "@theia/console": "1.11.0",
     "@theia/core": "1.11.0",
-    "@theia/cpp-debug": "1.11.0",
     "@theia/debug": "1.11.0",
     "@theia/editor": "1.11.0",
     "@theia/filesystem": "1.11.0",
