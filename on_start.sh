@@ -24,7 +24,7 @@ nohup yarn &
 #####################################
 THEIA_PATH=$PATH
 mkdir ${EC2_HOME}/.theia
-#curl https://raw.githubusercontent.com/SofianHamiti/amazon-sagemaker-notebook-instance-lifecycle-config-theia/main/config/launch.json -o ${EC2_HOME}/.theia/launch.json
+curl https://raw.githubusercontent.com/SofianHamiti/amazon-sagemaker-notebook-instance-lifecycle-config-theia/main/config/launch.json -o ${EC2_HOME}/.theia/launch.json
 curl https://raw.githubusercontent.com/SofianHamiti/amazon-sagemaker-notebook-instance-lifecycle-config-theia/main/config/settings.json -o ${EC2_HOME}/.theia/settings.json
 
 #####################################
