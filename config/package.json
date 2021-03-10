@@ -12,41 +12,23 @@
     }
   },
   "dependencies": {
-    "@theia/callhierarchy": "1.11.0",
-    "@theia/console": "1.11.0",
-    "@theia/core": "1.11.0",
-    "@theia/debug": "1.11.0",
-    "@theia/editor": "1.11.0",
     "@theia/editor-preview": "1.11.0",
     "@theia/file-search": "1.11.0",
-    "@theia/filesystem": "1.11.0",
+    "@theia/getting-started": "1.11.0",
     "@theia/git": "1.11.0",
-    "@theia/keymaps": "1.11.0",
+    "@theia/json": "1.11.0",
     "@theia/markers": "1.11.0",
     "@theia/messages": "1.11.0",
-    "@theia/metrics": "1.11.0",
-    "@theia/mini-browser": "1.11.0",
     "@theia/monaco": "1.11.0",
     "@theia/navigator": "1.11.0",
     "@theia/outline-view": "1.11.0",
-    "@theia/output": "1.11.0",
-    "@theia/plugin-dev": "1.11.0",
-    "@theia/plugin-ext": "1.11.0",
     "@theia/plugin-ext-vscode": "1.11.0",
-    "@theia/plugin-metrics": "1.11.0",
     "@theia/preferences": "1.11.0",
     "@theia/preview": "1.11.0",
-    "@theia/process": "1.11.0",
-    "@theia/scm": "1.11.0",
     "@theia/search-in-workspace": "1.11.0",
-    "@theia/task": "1.11.0",
     "@theia/terminal": "1.11.0",
-    "@theia/typehierarchy": "1.11.0",
-    "@theia/userstorage": "1.11.0",
-    "@theia/variable-resolver": "1.11.0",
-    "@theia/vsx-registry": "1.11.0",
-    "@theia/workspace": "1.11.0"
-  },
+    "@theia/vsx-registry": "1.11.0"
+    },
   "devDependencies": {
     "@theia/cli": "1.11.0"
   },
@@ -78,6 +60,6 @@
     "vscode-builtin-theme-solarized-dark": "https://open-vsx.org/api/vscode/theme-solarized-dark/1.44.2/file/vscode.theme-solarized-dark-1.44.2.vsix",
     "vscode-builtin-theme-tomorrow-night-blue": "https://open-vsx.org/api/vscode/theme-tomorrow-night-blue/1.44.2/file/vscode.theme-tomorrow-night-blue-1.44.2.vsix",
     "vscode-builtin-icon-theme-seti": "https://open-vsx.org/api/vscode/vscode-theme-seti/1.44.2/file/vscode.vscode-theme-seti-1.44.2.vsix",
-    "vscode-python": "https://github.com/microsoft/vscode-python/releases/download/2020.5.86806/ms-python-release.vsix"
+    "vscode-python": "https://github.com/microsoft/vscode-python/releases/download/2020.10.332292344/ms-python-release.vsix"
   }
 }
