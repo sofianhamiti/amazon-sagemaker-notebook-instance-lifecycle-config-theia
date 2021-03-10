@@ -1,7 +1,7 @@
 {
   "workbench.iconTheme": "theia-file-icons",
   "terminal.integrated.inheritEnv": true,
-  "python.pythonPath": "/home/ec2-user/anaconda3/envs/JupyterSystemEnv/bin/python",
+  "python.pythonPath": "/home/ec2-user/anaconda3/bin/python",
   "python.linting.pylintEnabled": true,
   "python.linting.flake8Enabled": true,
   "python.linting.pycodestyleEnabled": true,
