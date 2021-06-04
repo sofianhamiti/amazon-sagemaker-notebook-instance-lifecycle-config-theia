@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "1.11.0",
+  "version": "1.14.0",
   "theia": {
     "frontend": {
       "config": {
@@ -81,5 +81,3 @@
     "vscode-python": "https://github.com/microsoft/vscode-python/releases/download/2021.3.658691958/ms-python-release.vsix"
   }
 }
-
-v2021.2.633441544

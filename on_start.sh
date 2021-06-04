@@ -30,7 +30,7 @@ curl https://raw.githubusercontent.com/SofianHamiti/amazon-sagemaker-notebook-in
 #####################################
 ### INTEGRATE THEIA IDE WITH JUPYTER
 #####################################
-## CONFIGURE JUPYTER PROXY TO MAP TO THE THEIA IDE
+# CONFIGURE JUPYTER PROXY TO MAP TO THE THEIA IDE
 source /home/ec2-user/anaconda3/bin/activate JupyterSystemEnv
 cat >>/home/ec2-user/.jupyter/jupyter_notebook_config.py <<EOC
 c.ServerProxy.servers = {
@@ -50,6 +50,3 @@ EOP
 
 ## RESTART THE JUPYTER SERVER
 initctl restart jupyter-server --no-wait
-
-
-yarn --cwd /home/ec2-user/theia start /home/ec2-user/SageMaker --port 8887
