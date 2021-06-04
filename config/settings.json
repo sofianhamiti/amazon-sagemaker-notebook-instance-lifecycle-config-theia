@@ -1,4 +1,8 @@
 {
   "workbench.iconTheme": "theia-file-icons",
-  "python.condaPath": "/home/ec2-user/anaconda3/condabin/conda"
+  "terminal.integrated.inheritEnv": false,
+  "python.condaPath": "/home/ec2-user/anaconda3/condabin/conda",
+  "files.exclude": {
+    ".*": true
+  }
 }
