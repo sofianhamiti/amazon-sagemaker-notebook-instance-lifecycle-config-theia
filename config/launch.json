@@ -7,6 +7,19 @@
             "request": "launch",
             "program": "${file}",
             "console": "internalConsole"
+        },
+        {
+            "name": "Python: Remote Attach",
+            "type": "python",
+            "request": "attach",
+            "port": 8888,
+            "host": "localhost",
+            "pathMappings": [
+                {
+                "localRoot": "${workspaceFolder}",
+                "remoteRoot": "/opt/ml/code"
+                }
+            ]
         }
     ],
     "configurationAttributes": {
@@ -94,9 +107,33 @@
                 "description": "Debug standard library code.",
                 "default": false
             },
+            "gevent": {
+                "type": "boolean",
+                "description": "Enable debugging of gevent monkey-patched code.",
+                "default": false
+            },
+            "django": {
+                "type": "boolean",
+                "description": "Django debugging.",
+                "default": false
+            },
+            "jinja": {
+                "enum": [
+                    true,
+                    false,
+                    null
+                ],
+                "description": "Jinja template debugging (e.g. Flask).",
+                "default": null
+            },
             "sudo": {
                 "type": "boolean",
                 "description": "Running debug program under elevated permissions (on Unix).",
+                "default": false
+            },
+            "pyramid": {
+                "type": "boolean",
+                "description": "Whether debugging Pyramid applications",
                 "default": false
             },
             "subProcess": {
@@ -121,6 +158,31 @@
                 "description": "IP Address of the of remote server (default is localhost or use 127.0.0.1).",
                 "default": "localhost"
             },
+            "pathMappings": {
+                "type": "array",
+                "label": "Path mappings.",
+                "items": {
+                    "type": "object",
+                    "label": "Path mapping",
+                    "required": [
+                        "localRoot",
+                        "remoteRoot"
+                    ],
+                    "properties": {
+                        "localRoot": {
+                            "type": "string",
+                            "label": "Local source root.",
+                            "default": "${workspaceFolder}"
+                        },
+                        "remoteRoot": {
+                            "type": "string",
+                            "label": "Remote source root.",
+                            "default": ""
+                        }
+                    }
+                },
+                "default": []
+            },
             "logToFile": {
                 "type": "boolean",
                 "description": "Enable logging of debugger events to a log file.",
@@ -135,6 +197,20 @@
                 "type": "boolean",
                 "description": "Debug standard library code.",
                 "default": false
+            },
+            "django": {
+                "type": "boolean",
+                "description": "Django debugging.",
+                "default": false
+            },
+            "jinja": {
+                "enum": [
+                    true,
+                    false,
+                    null
+                ],
+                "description": "Jinja template debugging (e.g. Flask).",
+                "default": null
             },
             "subProcess": {
                 "type": "boolean",
