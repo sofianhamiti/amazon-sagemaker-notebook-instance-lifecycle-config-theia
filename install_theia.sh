@@ -16,7 +16,7 @@ nvm use 12
 npm install -g yarn
 
 NODE_OPTIONS=--max_old_space_size=4096
-cp config/package.json -o ${EC2_HOME}/theia/package.json
+cp config/package.json ${EC2_HOME}/theia/
 nohup yarn &
 
 #####################################
@@ -24,8 +24,8 @@ nohup yarn &
 #####################################
 THEIA_PATH=$PATH
 mkdir ${EC2_HOME}/.theia
-cp config/launch.json -o ${EC2_HOME}/.theia/launch.json
-cp config/settings.json -o ${EC2_HOME}/.theia/settings.json
+cp config/launch.json ${EC2_HOME}/.theia/
+cp config/settings.json ${EC2_HOME}/.theia/
 
 #####################################
 ### INTEGRATE THEIA IDE WITH JUPYTER PROXY
