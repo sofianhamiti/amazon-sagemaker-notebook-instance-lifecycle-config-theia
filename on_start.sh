@@ -45,7 +45,6 @@ c.ServerProxy.servers = {
 EOC
 
 pip install jupyter-server-proxy pylint autopep8 yapf pyflakes pycodestyle 'python-language-server[all]'
-jupyter serverextension enable --py --sys-prefix jupyter_server_proxy
 jupyter labextension install @jupyterlab/server-proxy
 conda deactivate
 EOP
