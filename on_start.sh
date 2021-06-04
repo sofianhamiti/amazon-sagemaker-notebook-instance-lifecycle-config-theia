@@ -6,9 +6,9 @@ sudo -u ec2-user -i <<'EOP'
 #####################################
 cd ${HOME}
 
-git clone https://github.com/SofianHamiti/amazon-sagemaker-notebook-instance-lifecycle-config-theia.git
-cd amazon-sagemaker-notebook-instance-lifecycle-config-theia
+git clone https://github.com/SofianHamiti/amazon-sagemaker-notebook-instance-lifecycle-config-theia.git lifecycle-config
 
+cd lifecycle-config
 sh install_theia.sh
 
 EOP

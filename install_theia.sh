@@ -4,7 +4,7 @@ sudo -u ec2-user -i <<'EOP'
 #####################################
 ## INSTALL THEIA IDE FROM SOURCE
 #####################################
-CONFIG_DIR=$PWD/config
+CONFIG_DIR=${HOME}/lifecycle-config/config
 EC2_HOME=/home/ec2-user
 mkdir ${EC2_HOME}/theia && cd ${EC2_HOME}/theia
 
