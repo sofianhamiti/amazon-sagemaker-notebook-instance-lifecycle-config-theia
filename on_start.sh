@@ -12,3 +12,6 @@ cd amazon-sagemaker-notebook-instance-lifecycle-config-theia
 sh install_theia.sh
 
 EOP
+
+## RESTART THE JUPYTER SERVER
+initctl restart jupyter-server --no-wait

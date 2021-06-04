@@ -46,6 +46,3 @@ pip install jupyter-server-proxy pylint autopep8 yapf pyflakes pycodestyle 'pyth
 jupyter labextension install @jupyterlab/server-proxy
 conda deactivate
 EOP
-
-## RESTART THE JUPYTER SERVER
-initctl restart jupyter-server --no-wait
