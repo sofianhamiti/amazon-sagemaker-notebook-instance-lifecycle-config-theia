@@ -4,6 +4,7 @@ sudo -u ec2-user -i <<'EOP'
 #####################################
 ## INSTALL THEIA IDE FROM SOURCE
 #####################################
+CONFIG_DIR=$PWD/config
 EC2_HOME=/home/ec2-user
 mkdir ${EC2_HOME}/theia && cd ${EC2_HOME}/theia
 
@@ -16,7 +17,7 @@ nvm use 12
 npm install -g yarn
 
 NODE_OPTIONS=--max_old_space_size=4096
-cp config/package.json ${EC2_HOME}/theia/
+cp ${CONFIG_DIR}/package.json ${EC2_HOME}/theia/
 nohup yarn &
 
 #####################################
@@ -24,8 +25,8 @@ nohup yarn &
 #####################################
 THEIA_PATH=$PATH
 mkdir ${EC2_HOME}/.theia
-cp config/launch.json ${EC2_HOME}/.theia/
-cp config/settings.json ${EC2_HOME}/.theia/
+cp ${CONFIG_DIR}/launch.json ${EC2_HOME}/.theia/
+cp ${CONFIG_DIR}/settings.json ${EC2_HOME}/.theia/
 
 #####################################
 ### INTEGRATE THEIA IDE WITH JUPYTER PROXY

@@ -2,7 +2,7 @@ set -e
 
 sudo -u ec2-user -i <<'EOP'
 #####################################
-## INSTALL THEIA IDE FROM SOURCE
+## INSTALL THEIA IDE
 #####################################
 cd ${HOME}
 
