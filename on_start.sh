@@ -2,6 +2,12 @@ set -e
 
 sudo -u ec2-user -i <<'EOP'
 #####################################
+## INSTALL LIBSECRET DEPENDENCY
+#####################################
+# https://github.com/eclipse-theia/theia/pull/9807
+yum install -y http://mirror.centos.org/centos/7/os/x86_64/Packages/libsecret-0.18.6-1.el7.x86_64.rpm
+
+#####################################
 ## INSTALL THEIA IDE
 #####################################
 cd ${HOME}
