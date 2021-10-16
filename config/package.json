@@ -12,6 +12,7 @@
     }
   },
   "dependencies": {
+      "keytar": "latest",
       "@theia/callhierarchy": "latest",
       "@theia/debug": "latest",
       "@theia/editor-preview": "latest",
